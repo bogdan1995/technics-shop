@@ -12,30 +12,20 @@
  *
  */
 
-/* Compass */
-@import "compass/css3/images";
-
 /* Tools */
-@import "tools/functions";
-@import "tools/site-settings";
-@import "tools/mixins";
-@import "tools/helpers";
+@import "tools/index";
 
 /* Base */
-@import "base/normalize";
-@import "base/base";
-@import "base/form";
-
-/* Fonts */
-//@import "fonts/...";
+@import "base/index";
 
 /* Layout */
-@import "layout/header";
-@import "layout/nav";
-@import "layout/footer";
-@import "layout/constrained";
+@import "layout/index";
 
 /* Modules */
-@import "modules/btn";
-@import "modules/icons";
-//@import "modules/animations";
+@import "modules/index";
+
+h1 {
+	z-index: 9988;
+	box-sizing: border-box;
+
+}

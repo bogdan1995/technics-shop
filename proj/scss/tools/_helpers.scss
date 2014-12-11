@@ -104,20 +104,10 @@
 ------------------- */
 
 .ul-list-inline {
-    @include ul-list-inline();
+    li {
+        display: inline-block;
+    }
 }
-
-/* =Fonts
-------------------- */
-
-/* Chart Colors */
-.f-color1 {
-    color: $color1;
-}
-.f-color2 {
-    color: $color2;
-}
-
 
 /* =Wordpress alignment
 -------------------*/
