@@ -1,0 +1,11 @@
+{
+  "name": "_template",
+  "version": "0.1.0",
+  "description": "none",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ponomarenko Bogdan",
+  "license": "ISC"
+}
