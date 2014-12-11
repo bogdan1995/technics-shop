@@ -1,0 +1,23 @@
+{
+  "name": "_template",
+  "version": "0.1.0",
+  "authors": [
+    "Bogdan Ponomarenko <ponomarenko.bogdan@yandex.ru>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "proj/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-1.11.1": "http://code.jquery.com/jquery-1.11.1.js",
+    "jquery-placeholder": "~2.0.8",
+    "modernizr": "~2.8.3",
+    "respond": "~1.4.2"
+  }
+}
