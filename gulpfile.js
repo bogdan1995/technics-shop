@@ -40,6 +40,7 @@ gulp.task('css', function () {
             cascade: false
         }))
         .pipe(gulp.dest('./proj/css'))
+        .pipe(connect.reload())
         .pipe(notify("SCSS done!"));
 });
 
