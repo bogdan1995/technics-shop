@@ -12,19 +12,19 @@ html
 		block title
 			title
 
-		//- build:css css/style.css
+		<!-- build:css css/style.css -->
 		link(rel="stylesheet" type="text/css" href="css/style.css" media="screen")
-		//- end build
-		//- build:js js/modernizr.js
+		<!-- end build -->
+		<!-- build:js js/modernizr.js -->
 		script(src="js/vendor/modernizr.js")
-		//- end build
+		<!-- end build -->
 		<!--[if lte IE 9]>
-		//- build:css css/ie.css
+		<!-- build:css css/ie.css -->
 		<link type="text/css" rel="stylesheet" href="css/ie.css"/>
-		//- end build
-		//- build:js js/respond.js
+		<!-- end build -->
+		<!-- build:js js/respond.js -->
 		<script src="js/vendor/respond.js"></script>
-		//- end build
+		<!-- end build -->
 		<![endif]-->
 	body
 		<!--[if lt IE 7]>
@@ -37,10 +37,10 @@ html
 
 		include ../_blocks/footer.jade
 
-		//- build:js js/vendor.js
-		//- bower:js
-		//- endbower
-		//- endbuild
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<!-- endbower -->
+		<!-- endbuild -->
 
 		script(src="js/main.js")
 
