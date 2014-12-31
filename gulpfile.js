@@ -61,7 +61,9 @@ gulp.task('jade', function() {
 gulp.task('jshint', function() {
   return gulp.src('./proj/js/*.js')
     .pipe(jshint())
+    .pipe(connect.reload())
     .pipe(notify("JS done!"));
+
 });
 
 gulp.task('wiredep', function () {
@@ -69,19 +71,22 @@ gulp.task('wiredep', function () {
         .pipe(wiredep({
             directory: 'proj/bower_components'
         }))
+        .pipe(connect.reload())
+        .pipe(notify("wiredep done!"))
         .pipe(gulp.dest('./proj'));
+
 });
 
 gulp.task('watch', function () {
   gulp.watch(['./proj/jade/_pages/*.jade'], ['jade']);
   gulp.watch(['./proj/scss/**/*.scss'], ['css']);
   gulp.watch(['./proj/js/*.js'], ['jshint']);
-  gulp.watch(['bower.json'], ['wiredep']);
+  gulp.watch(['./bower.json'], ['wiredep']);
 });
 
-gulp.task('build', ['clean'], function () { 
+gulp.task('build', function () {
  	var assets = useref.assets();
-  return gulp.src('app/*.html')
+  return gulp.src('proj/*.html')
     .pipe(assets)
     .pipe(gulpif('*.js', uglify()))
     .pipe(gulpif('*.css', minifyCss()))
@@ -91,7 +96,8 @@ gulp.task('build', ['clean'], function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('dist').pipe(clean());
+    return gulp.src('dist')
+        .pipe(clean());
 });
 
 

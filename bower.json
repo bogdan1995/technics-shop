@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-1.11.1": "http://code.jquery.com/jquery-1.11.1.js",
-    "jquery-placeholder": "~2.0.8"
+    "jquery-placeholder": "~2.0.8",
+    "jquery": "1.10.2"
   }
 }
