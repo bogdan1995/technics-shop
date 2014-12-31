@@ -13,15 +13,16 @@ var gulp = require('gulp'),
 	uncss = require('gulp-uncss'), 
 	useref = require('gulp-useref'),
 	opn = require('opn'), 
-	wiredep = require('wiredep'),
+	wiredep = require('wiredep').stream,
   connect = require('gulp-connect');
 
 gulp.task('connect', function() {
   connect.server({
     root: 'proj',
-    livereload: true
+    livereload: true,
+    port: 8000
   });
-  opn('http://localhost:8080/');
+  opn('http://localhost:8000/');
 });
 
 
@@ -68,7 +69,7 @@ gulp.task('wiredep', function () {
         .pipe(wiredep({
             directory: 'proj/bower_components'
         }))
-        .pipe(gulp.dest('proj'));
+        .pipe(gulp.dest('./proj'));
 });
 
 gulp.task('watch', function () {
