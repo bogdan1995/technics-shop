@@ -1,7 +1,5 @@
 .idea
 proj/bower_components
-proj/css
-proj/*.html
 node_modules
 dist
 .DS_Store
