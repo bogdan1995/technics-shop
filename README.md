@@ -2,50 +2,34 @@
 
 ### Project structure:
 
-|_ .bowerrc - settings for bower
+<pre>|_ .bowerrc - settings for bower</pre>
+<pre>|_ bower.json - config for bower</pre>
+<pre>|_ .gitignore - untracked files and folders</pre>
+<pre>|_ package.json - config for npm</pre>
+<pre>|_ gulpfile.js - config for gulp</pre>
+<pre>|_ proj - project source files</pre>
+<pre>  |_ css - stylesheets</pre>
+<pre>  |_ fonts - fonts</pre>
+<pre>  |_ img - images</pre>
+<pre>  |_ jade - jade files</pre>
+<pre>    |_ blocks - repeating blocks</pre>
+<pre>    |_ layouts - templates </pre>
+<pre>    |_ pages - page layout</pre>
+<pre>  |_ js - javascript files</pre>
+<pre>    |_ vendor - javascript plugins</pre>
+<pre>    main.js - your js code</pre>
+<pre>  |_ php - php files</pre>
+<pre>  |_ scss - SASS files (SMACSS)</pre>
+<pre>    |_ base - basic stylesheet (reset, normalize and e.t.c)</pre>
+<pre>    |_ layouts - blocks stylesheet</pre>
+<pre>    |_ modules - elements stylesheet</pre>
+<pre>    |_ tools - variables, mixins, functions and e.t.c.</pre>
+<pre>    ie.scss - hacks for ie</pre>
+<pre>    style.scss - main scss file</pre>
 
-|_ bower.json - config for bower
+### How it works?
 
-|_ .gitignore - untracked files and folders
-
-|_ package.json - config for npm
-
-|_ gulpfile.js - config for gulp
-
-|_ proj - project source files
-
-	|_ css - stylesheets
-
-	|_ fonts - fonts
-
-	|_ img - images
-
-	|_ jade - jade files
-
-		|_ blocks - repeating blocks
-
-		|_ layouts - templates 
-
-		|_ pages - page layout
-
-	|_ js - javascript files
-
-		|_ vendor - javascript plugins
-
-		main.js - your js code
-
-	|_ php - php files
-
-	|_ scss - SASS files (SMACSS)
-
-		|_ base - basic stylesheet (reset, normalize and e.t.c)
-
-		|_ layouts - blocks stylesheet
-
-		|_ modules - elements stylesheet
-
-		|_ tools - variables, mixins, functions and e.t.c.
-
-		ie.scss - hacks for ie
-
-		style.scss - main scss file
+1.  Download project
+2.  In your console write "npm install"
+3.  Start "default" task in gulp
+4.  Enjoy! :)
