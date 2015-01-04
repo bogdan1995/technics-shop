@@ -1,16 +1,4 @@
-/*
- * SMACSS + SCSS starter v2.0
- * Inspired by SMACSS http://smacss.com
- * Author: @jonathanpath
- * Date: 11 July 2013
- *
- * https://github.com/jonathanpath/SASS-SMACSS
- * See file structure in http://jonathanpath.com/sass+smacss/scss/style.scss
- * Sass Structure inspired by : https://github.com/sutter/POPY-starter-HTML-SCSS
- *
- * Coding rules : https://github.com/necolas/idiomatic-css
- *
- */
+@import "compass/reset";
 
 /* Tools */
 @import "tools/index";
@@ -23,3 +11,9 @@
 
 /* Modules */
 @import "modules/index";
+
+* {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: red;
+}
