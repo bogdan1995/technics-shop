@@ -16,7 +16,8 @@ var
     opn = require('opn'),
     wiredep = require('wiredep').stream,
     connect = require('gulp-connect'),
-    compass = require('gulp-compass');
+    compass = require('gulp-compass'),
+    prettify = require('gulp-html-prettify');
 
 gulp.task('connect', function () {
     connect.server({
@@ -43,28 +44,16 @@ gulp.task('css', function() {
         .pipe(notify("SCSS done!"));
 });
 
-
-//gulp.task('css', function () {
-//    gulp.src('./proj/scss/*.scss')
-//        .pipe(sass())
-//        .pipe(autoprefixer({
-//            browsers: ['last 15 versions'],
-//            cascade: false
-//        }))
-//        .pipe(gulp.dest('./proj/css'))
-//        .pipe(connect.reload())
-//        .pipe(notify("SCSS done!"));
-//});
-
 gulp.task('jade', function () {
     gulp.src('./proj/jade/_pages/*.jade')
-        .pipe(jade({
-            pretty: true
-        }))
+        .pipe(jade())
+        .pipe(prettify({indent_char: ' ', indent_size: 2}))
         .pipe(gulp.dest('./proj/'))
         .pipe(connect.reload())
         .pipe(notify("Jade done!"));
 });
+
+
 
 // gulp.task('uncss', function() {
 //     return gulp.src('./proj/css/style.css')
