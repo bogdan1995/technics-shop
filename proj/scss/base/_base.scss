@@ -5,17 +5,13 @@
 body {
     font-family: $main-font;
     font-weight: 300;
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1;
 }
 
 a {
     color: $color-link;
     text-decoration: none;
-
-    &:hover {
-        color: $color-link-hover;
-    }
 }
 
 hr {
@@ -25,4 +21,23 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo-text {
+    position: absolute;
+    left: -999999999999999999px;
 }

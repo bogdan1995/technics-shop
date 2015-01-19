@@ -1,3 +1,71 @@
 // =======================
 // Layout/Header
 // =======================
+
+@import "compass/typography/links/hover-link";
+
+.header {
+  @extend .clearfix;
+  position: relative;
+}
+
+.header__menu, .header__logo, .contacts {
+  float: left;
+}
+
+.header__menu__list {
+  margin: 60px 0 0 20px;
+  &-item {
+    display: inline-block;
+    border-right: 1px solid grey;
+    margin-left: -5px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  &-link {
+    font-size: 12px;
+    display: block;
+    padding: 7px 17px;
+    color: $header-color;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: $color-link;
+    }
+  }
+}
+
+.contacts {
+  padding: 20px 0 0  53px;
+}
+
+.contacts__email, .contacts__call-message, .contacts__call-tel {
+  margin-bottom: 11px;
+}
+
+.contacts__email {
+  .contacts__email-link {
+    @include hover-link();
+  }
+}
+
+.contacts__call {
+  &-message {
+    color: $text-color;
+
+  }
+  &-link {
+    font-size: 18px;
+    margin-right: 28px;
+    font-weight: bold;
+  }
+}
+.header__icons__list {
+  position: absolute;
+  top: 20px;
+  left: 395px;
+  &-item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
