@@ -1,7 +1,35 @@
 extends ../_layouts/layout.jade
 
 block title
-    title Article Title
+    title ТехНик
 
 block content
-    .container Hello, world!
+    .container
+        .header
+            .header__logo
+                a(href="#").header__logo-link
+                    img(src="/img/header-logo.png")
+                h1.header__logo-text Техник
+            .header__menu
+                ul.header__menu__list
+                    each item in ['О компании', 'Спецпредложения', 'Контакты']
+                        li.header__menu__list-tem
+                            a(href="#").header__menu-link=item
+            .header__contacts
+                a(href="mailto:Infohome@yahoo.com").header__contact-email Infohome@yahoo.com
+                .header__contacts__call
+                    span.header__contacts__call-message Звоните нам!
+                    .header__contacts__call-tel
+                        a(href="tel:+73512832847").header__contacts__call-link +7 (351) 283 28 47
+                        a(href="tel:+79080558811").header__contacts__call-link +7 (908) 055 88 11
+                    span.header__contacts__call-message Оставьте номер и мы Вам перезвоним!
+            .header__icons
+                ul.header__icons__list
+                    each item in ['home', 'message', 'map']
+                        li.header__icons__list-item.header__icons__list-item
+        .nav
+            ul.nav__list
+                each item in ['Аренда', 'Сервис','Запчасти','Финансовые решения']
+                    li.nav__list-item
+                        a(href="#").nav__list-link=item
+
