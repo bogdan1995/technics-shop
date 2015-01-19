@@ -15,14 +15,14 @@ block content
                     each item in ['О компании', 'Спецпредложения', 'Контакты']
                         li.header__menu__list-tem
                             a(href="#").header__menu-link=item
-            .header__contacts
+            .contacts
                 a(href="mailto:Infohome@yahoo.com").header__contact-email Infohome@yahoo.com
-                .header__contacts__call
-                    span.header__contacts__call-message Звоните нам!
-                    .header__contacts__call-tel
-                        a(href="tel:+73512832847").header__contacts__call-link +7 (351) 283 28 47
-                        a(href="tel:+79080558811").header__contacts__call-link +7 (908) 055 88 11
-                    span.header__contacts__call-message Оставьте номер и мы Вам перезвоним!
+                .contacts__call
+                    span.contacts__call-message Звоните нам!
+                    .contacts__call-tel
+                        a(href="tel:+73512832847").contacts__call-link +7 (351) 283 28 47
+                        a(href="tel:+79080558811").contacts__call-link +7 (908) 055 88 11
+                    span.contacts__call-message Оставьте номер и мы Вам перезвоним!
             .header__icons
                 ul.header__icons__list
                     each item in ['home', 'message', 'map']
@@ -32,4 +32,90 @@ block content
                 each item in ['Аренда', 'Сервис','Запчасти','Финансовые решения']
                     li.nav__list-item
                         a(href="#").nav__list-link=item
-
+        .slider
+            .slider-pics
+                img(src="/img/slider-pic.png")
+        .content
+            h3 Несколько слов о нас
+            p Компания «АстрА-техно» – генеральный импортер и дистрибьютор в России строительной, землеройной, коммунально-уборочной техники таких брендов, как:
+            p MUSTANG (США) — мини погрузчики с бортовым поворотом, шарнирно-сочлененные мини погрузчики, гусеничные мини погрузчики;
+            ul
+                li HANIX (Япония) — гусеничные мини экскаваторы;
+            p А также представляет популярные бренды ландшафтно-озеленительной, грузоподъемной, дорожной, высотной техники и дробильно-сортировочного оборудования
+            ul
+                li AVANT (Финляндия) — мини тракторы и мини погрузчики с шарнирно-сочлененной рамой;
+                li DIECI (Италия) — высокопроизводительные <a href="#">телескопические погрузчики</a> с жёсткой стрелой и с поворотной башней;
+                li TEREX (Великобритания) — экскаваторы-погрузчики, мини экскаваторы и фронтальные погрузчики;
+            p Представленные компанией «АстрА-техно» бренды являются лидерами в своей области, а фирмы-изготовители имеют огромный опыт в производстве универсальной техники. Используя современные передовые технологии и разработки, высококвалифицированный персонал заводов-изготовителей производит технику, которая отвечает всем требованиям самых взыскательных клиентов.
+            p Продажа минитракторов, подъемников и других видов техники - это сфера, в которой особенно важны профессионализм, опыт и понимание главных тенденций данного направления. Наши клиенты, которые хотят купить минитрактор, должны быть уверены в качестве приобретаемой техники и сервисном обслуживании.
+            p Помимо самих моделей техники наша компания осуществляет продажу дополнительного оборудования, которым при необходимости могут оснащаться машины. Оборудование поставляется от ведущих отечественных и зарубежных изготовителей.
+        .news
+            h3 Последние новости
+            .news__post
+                time(datetime="19-09-2014") 19 Сентября
+                p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
+                a(href="#") Подробнее
+            .news__post
+                time(datetime="19-09-2014") 19 Сентября
+                p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
+                a(href="#") Подробнее
+            .news__post
+                time(datetime="19-09-2014") 19 Сентября
+                p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
+                a(href="#") Подробнее
+        .sponsors
+            ul.sponsors__list
+                each item in ['mccloskey','terex','dieci','hanix','avant','mustang','hanix']
+                    li.sponsors__list-item
+                        a(href="#").sponsors__list-link=item
+        .footer
+            .footer__menu
+                .footer__menu__inner
+                    span.footer__menu__inner-caption О компании
+                    ul.footer__menu__inner__list
+                        each item in ['История создания', 'Персонал', 'Сертификаты', 'Новости']
+                            li.footer__menu__inner__list-item
+                                a(href="#").footer__menu__inner__list-link=item
+                .footer__menu__inner
+                    span.footer__menu__inner-caption Сервис
+                    ul.footer__menu__inner__list
+                        each item in ['Обслуживание', 'Партнеры', 'Предложения']
+                            li.footer__menu__inner__list-item
+                                a(href="#").footer__menu__inner__list-link=item
+                .footer__menu__inner
+                    span.footer__menu__inner-caption Новости
+                    ul.footer__menu__inner__list
+                        each item in ['Архив', 'Горячие ', 'О компании']
+                            li.footer__menu__inner__list-item
+                                a(href="#").footer__menu__inner__list-link=item
+                .footer__menu__inner
+                    span.footer__menu__inner-caption Спецтехника
+                    ul.footer__menu__inner__list
+                        each item in ['Аренда техники', 'Финансовые решения', 'Экскаваторы', 'Погрузчики', 'Автокраны']
+                            li.footer__menu__inner__list-item
+                                a(href="#").footer__menu__inner__list-link=item
+                .footer__menu__inner
+                    span.footer__menu__inner-caption Контакты
+                    ul.footer__menu__inner__list
+                        each item in ['Обратная связь', 'Телефон']
+                            li.footer__menu__inner__list-item
+                                a(href="#").footer__menu__inner__list-link=item
+                .footer__menu__inner
+                    span.footer__menu__inner-caption Запчасти
+                    ul.footer__menu__inner__list
+                        each item in ['На заказ', 'Смотреть каталог', 'Поиск']
+                            li.footer__menu__inner__list-item
+                                a(href="#").footer__menu__inner__list-link=item
+        .footer__logo
+            img(src="/img/footer-logo.png")
+            h1 Техник
+        .footer__copyright
+            p.footer__copyright-text Все права защищены 2009-2014
+            p.footer__copyright-text Любое копирование информации с сайта запрещено.
+            .contacts
+                .contacts__call.contacts__call_monochrome
+                    span.contacts__call-message Звоните нам!
+                    .contacts__call-tel
+                        a(href="tel:+73512832847").contacts__call-link +7 (351) 283 28 47
+                        a(href="tel:+79080558811").contacts__call-link +7 (908) 055 88 11
+            

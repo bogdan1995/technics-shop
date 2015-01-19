@@ -33,7 +33,7 @@ gulp.task('css', function() {
         .pipe(compass({
             css: 'proj/css',
             sass: 'proj/scss',
-            require: ['compass', 'susy']
+            require: ['compass']
         }))
         .pipe(autoprefixer({
             browsers: ['last 15 versions'],
