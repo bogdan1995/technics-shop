@@ -3,15 +3,21 @@
 // =======================
 
 body {
+    background: $background-color;
     font-family: $main-font;
     font-weight: 300;
     font-size: 12px;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 a {
     color: $color-link;
     text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 hr {
@@ -32,9 +38,17 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
+}
+
+.innerWrapper {
+    padding: 0 10px;
 }
 
 .logo-text {

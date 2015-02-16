@@ -7,6 +7,8 @@
 .header {
   @extend .clearfix;
   position: relative;
+  line-height: 1;
+  margin-bottom: 7px;
 }
 
 .header__menu, .header__logo, .contacts {
@@ -25,6 +27,7 @@
   }
   &-link {
     font-size: 12px;
+    font-weight: bold;
     display: block;
     padding: 7px 17px;
     color: $header-color;

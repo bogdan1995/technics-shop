@@ -1,3 +1,61 @@
 // =======================
 // Layout/Navigation
 // =======================
+
+.nav {
+
+}
+
+.nav__list {
+  &-item {
+    display: inline-block;
+    margin: 0 1px;
+    text-align: center;
+  }
+  &-link {
+    background: $nav-color;
+    line-height: 60px;
+    width: 230px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;
+    &:hover .nav__list-text{
+      text-decoration: underline;
+    }
+  }
+  &-text {
+    font-weight: bold;
+    padding-left: 30px;
+    width: 85px;
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -28+30px;
+      top: -13px;
+    }
+    &_rent:before {
+      @extend %rent;
+    }
+    &_service:before {
+      @extend %service;
+    }
+    &_part:before {
+      @extend %part;
+    }
+    &_calc{
+      vertical-align: middle;
+      text-align: left;
+      padding-left: 70px;
+      &:before {
+        @extend %calc;
+        top: -10px;
+        left: 25px;
+      }
+    }
+  }
+}
