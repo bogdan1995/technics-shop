@@ -143,9 +143,20 @@
           </ul>
         </div>
         <div class="slider">
-          <div class="slider-pics">
-            <img src="img/slider-pic.png">
-          </div>
+          <ul class="slider__list">
+            <li class="slider__list-item">
+              <img src="img/slider-pic.png" class="slider__list-pic"><span class="slider__list-text">Уникальное</span><span class="slider__list-text slider__list-text_mod">спецпредложение!</span>
+            </li>
+            <li class="slider__list-item">
+              <img src="img/slider-pic.png" class="slider__list-pic"><span class="slider__list-text">Уникальное</span><span class="slider__list-text slider__list-text_mod">спецпредложение!</span>
+            </li>
+            <li class="slider__list-item">
+              <img src="img/slider-pic.png" class="slider__list-pic"><span class="slider__list-text">Уникальное</span><span class="slider__list-text slider__list-text_mod">спецпредложение!</span>
+            </li>
+            <li class="slider__list-item">
+              <img src="img/slider-pic.png" class="slider__list-pic"><span class="slider__list-text">Уникальное</span><span class="slider__list-text slider__list-text_mod">спецпредложение!</span>
+            </li>
+          </ul>
         </div>
         <div class="content">
           <div class="about">
@@ -168,7 +179,7 @@
             <p>Помимо самих моделей техники наша компания осуществляет продажу дополнительного оборудования, которым при необходимости могут оснащаться машины. Оборудование поставляется от ведущих отечественных и зарубежных изготовителей.</p>
           </div>
           <div class="news">
-            <h3>Последние новости</h3>
+            <h3 class="news-name">Последние новости</h3>
             <div class="news__post">
               <time datetime="19-09-2014">19 Сентября</time>
               <p>Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка</p><a href="#">Подробнее</a>
@@ -177,7 +188,7 @@
               <time datetime="19-09-2014">19 Сентября</time>
               <p>Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка</p><a href="#">Подробнее</a>
             </div>
-            <div class="news__post">
+            <div class="news__post news__post_last">
               <time datetime="19-09-2014">19 Сентября</time>
               <p>Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка</p><a href="#">Подробнее</a>
             </div>
@@ -300,6 +311,7 @@
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js js/main.js -->
+  <script src="bower_components/bxslider/jquery.bxSlider.min.js"></script>
   <script src="js/main.js"></script>
   <!-- endbuild -->
 </body>

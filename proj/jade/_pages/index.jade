@@ -79,8 +79,23 @@ block content
                         a(href="#").nav__list-link.nav__list-link_calc
                             span.nav__list-text.nav__list-text_calc Финансовые решения
             .slider
-                .slider-pics
-                    img(src="img/slider-pic.png")
+                ul.slider__list
+                    li.slider__list-item
+                        img(src="img/slider-pic.png").slider__list-pic
+                        span.slider__list-text Уникальное
+                        span.slider__list-text.slider__list-text_mod спецпредложение!
+                    li.slider__list-item
+                        img(src="img/slider-pic.png").slider__list-pic
+                        span.slider__list-text Уникальное
+                        span.slider__list-text.slider__list-text_mod спецпредложение!
+                    li.slider__list-item
+                        img(src="img/slider-pic.png").slider__list-pic
+                        span.slider__list-text Уникальное
+                        span.slider__list-text.slider__list-text_mod спецпредложение!
+                    li.slider__list-item
+                        img(src="img/slider-pic.png").slider__list-pic
+                        span.slider__list-text Уникальное
+                        span.slider__list-text.slider__list-text_mod спецпредложение!
             .content
                 .about
                     h3 Несколько слов о нас
@@ -97,7 +112,7 @@ block content
                     p Продажа минитракторов, подъемников и других видов техники - это сфера, в которой особенно важны профессионализм, опыт и понимание главных тенденций данного направления. Наши клиенты, которые хотят купить минитрактор, должны быть уверены в качестве приобретаемой техники и сервисном обслуживании.
                     p Помимо самих моделей техники наша компания осуществляет продажу дополнительного оборудования, которым при необходимости могут оснащаться машины. Оборудование поставляется от ведущих отечественных и зарубежных изготовителей.
                 .news
-                    h3 Последние новости
+                    h3.news-name Последние новости
                     .news__post
                         time(datetime="19-09-2014") 19 Сентября
                         p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
@@ -106,7 +121,7 @@ block content
                         time(datetime="19-09-2014") 19 Сентября
                         p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
                         a(href="#") Подробнее
-                    .news__post
+                    .news__post.news__post_last
                         time(datetime="19-09-2014") 19 Сентября
                         p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
                         a(href="#") Подробнее

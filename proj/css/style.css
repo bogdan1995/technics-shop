@@ -2,20 +2,21 @@
 /* Font variables */
 /* Color variables */
 /* Clearfix */
-.clearfix:before, .header:before,
+.clearfix:before, .header:before, .content:before,
 .clearfix:after,
-.header:after {
+.header:after,
+.content:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.clearfix:after, .header:after {
+.clearfix:after, .header:after, .content:after {
   clear: both;
 }
 
-.clearfix, .header {
+.clearfix, .header, .content {
   *zoom: 1;
 }
 
@@ -554,6 +555,10 @@ img {
   margin-right: 15px;
 }
 
+.nav {
+  margin-bottom: 10px;
+}
+
 .nav__list-item {
   display: inline-block;
   margin: 0 1px;
@@ -633,6 +638,88 @@ img {
 }
 .menu__list .menu__list-link:hover {
   color: #CF3232;
+}
+
+.slider {
+  padding: 2px;
+  -webkit-box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px grey;
+}
+
+.slider__list-item {
+  position: relative;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.slider__list-text {
+  padding: 0 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  top: 74px;
+  left: 49px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.slider__list-text_mod {
+  top: 93px;
+}
+
+.bx-pager {
+  position: absolute;
+  top: 164px;
+  left: -webkit-calc(50% - 30px);
+  left: calc(50% - 30px);
+}
+
+.pager-active {
+  background: #CF3232 !important;
+}
+.pager-link {
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.news {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+.news-name {
+  text-transform: uppercase;
+}
+
+.news__post {
+  margin-bottom: 23px;
+  padding-bottom: 19px;
+  padding-right: 10px;
+  width: 185px;
+  border-bottom: 1px dotted grey;
+}
+.news__post_last {
+  border-bottom: none;
+}
+.news__post time {
+  color: #CF3232;
+  display: block;
+}
+.news__post a {
+  text-decoration: underline;
+}
+.news__post p, .news__post time, .news__post a {
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.about {
+  width: 700px;
+  float: right;
 }
 
 /* Modules */

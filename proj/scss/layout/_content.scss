@@ -1,0 +1,44 @@
+// =======================
+// Layout/Content
+// =======================
+
+.content {
+  @extend .clearfix;
+}
+
+.news {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+  &-name {
+    text-transform: uppercase;
+  }
+}
+
+.news__post {
+  &_last {
+    border-bottom: none;
+  }
+  time {
+    color: $color-link;
+    display: block;
+  }
+  a {
+    text-decoration: underline;
+  }
+  p, time, a {
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  margin-bottom: 23px;
+  padding-bottom: 19px;
+  padding-right: 10px;
+  width: 185px;
+  border-bottom: 1px dotted grey;
+}
+
+.about {
+  width: 700px;
+  float: right;
+}

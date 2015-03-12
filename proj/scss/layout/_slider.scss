@@ -1,0 +1,48 @@
+// =======================
+// Layout/Slider
+// =======================
+
+.slider {
+  padding: 2px;
+  box-shadow: 0 0 5px grey;
+}
+
+.slider__list {
+  &-item {
+    position: relative;
+    border-radius: 2px;
+  }
+  &-text {
+    padding: 0 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    top: 74px;
+    left: 49px;
+    background: rgba(#000, .5);
+    color: #fff;
+    &_mod {
+      top: 93px;
+    }
+  }
+}
+
+.bx-pager {
+  position: absolute;
+  top: 164px;
+  left: calc(50% - 30px);
+}
+
+.pager {
+  &-active {
+    background: $color-link !important;
+  }
+  &-link {
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+}
