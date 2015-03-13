@@ -41,4 +41,86 @@
 .about {
   width: 700px;
   float: right;
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 10px;
+  }
+  p, li {
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+}
+
+.sponsors {
+  margin-bottom: 20px;
+}
+
+.sponsors__list {
+  @extend .clearfix;
+  height: 77px;
+  background: $block-color;
+  box-shadow: 0 3px 3px grey;
+}
+
+.sponsors__list-item {
+  &_mccloskey {
+    .sponsors__list-link {
+      @extend %mccloskey;
+      &:hover {
+        @extend %mccloskey_hover;
+      }
+    }
+  }
+  &_terex {
+    .sponsors__list-link {
+      @extend %terex;
+      &:hover {
+        @extend %terex_hover;
+      }
+    }
+  }
+  &_dieci {
+    .sponsors__list-link {
+      @extend %dieci;
+      &:hover {
+        @extend %dieci_hover;
+      }
+    }
+  }
+  &_hanix {
+    .sponsors__list-link {
+      @extend %hanix;
+      &:hover {
+        @extend %hanix_hover;
+      }
+    }
+  }
+  &_avant {
+    .sponsors__list-link {
+      @extend %avant;
+      &:hover {
+        @extend %avant_hover;
+      }
+    }
+  }
+  &_mustang {
+    .sponsors__list-link {
+      @extend %mustang;
+      &:hover {
+        @extend %mustang_hover;
+      }
+    }
+  }
+  &_hanix {
+    .sponsors__list-link {
+      @extend %hanix;
+      &:hover {
+        @extend %hanix_hover;
+      }
+    }
+  }
+  display: inline-block;
+  vertical-align: middle;
+  margin: 28px 24px;
 }

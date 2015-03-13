@@ -2,9 +2,12 @@
 // Modules/Icons
 // =======================
 
-.header__icons__list-link_home, .header__icons__list-link_map, .header__icons__list-link_message, %avant, %avant_hover, %dieci, %dieci_hover, %hanix, %hanix_hover, %mccloskey, %mccloskey_hover, %mustang, %mustang_hover, %terex, %terex_hover, %sprites, %calc, %part, %rent, %service{
-  background: url(../img/sprites.png) no-repeat;
+.header__icons__list-link_home, .header__icons__list-link_map, .header__icons__list-link_message, %avant, %dieci, %hanix, %mccloskey, %mustang, %terex, %sprites, %calc, %part, %rent, %service{
   display: block;
+}
+
+.header__icons__list-link_home, .header__icons__list-link_map, .header__icons__list-link_message, %avant, %avant_hover, %dieci, %dieci_hover, %hanix, %hanix_hover, %mccloskey, %mccloskey_hover, %mustang, %mustang_hover, %terex, %terex_hover, %sprites, %calc, %part, %rent, %service {
+  background: url(../img/sprites.png) no-repeat;
 }
 
 .header__icons__list-link_home{

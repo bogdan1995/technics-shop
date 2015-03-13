@@ -2,3 +2,49 @@
 // Layout/Footer
 // =======================
 
+.footer {
+  width: 940px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+.footer__menu__inner {
+  &:hover &-caption {
+    color: $color-link;
+  }
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 71px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &-caption {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+.footer__menu__inner__list {
+  &-link {
+    color: $text-color;
+    &:hover {
+      color: $color-link;
+    }
+  }
+}
+
+.footer__copyright {
+  float: left;
+  margin-right: 60px;
+  & + .contacts {
+    padding: 0;
+    .contacts__call-link {
+      color: $text-color;
+    }
+  }
+}

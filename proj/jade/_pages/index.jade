@@ -5,30 +5,6 @@ block title
 
 block content
     .container
-        .header
-            .header__logo
-                a(href="#").header__logo-link
-                    img(src="/img/header-logo.png")
-                h1.logo-text Техник
-            .header__menu
-                ul.header__menu__list
-                    each item in ['О компании', 'Спецпредложения', 'Контакты']
-                        li.header__menu__list-item
-                            a(href="#").header__menu__list-link=item
-            .contacts
-                .contacts__email
-                    a(href="mailto:Infohome@yahoo.com").contacts__email-link Infohome@yahoo.com
-                .contacts__call
-                    .contacts__call-message Звоните нам!
-                    .contacts__call-tel
-                        a(href="tel:+73512832847").contacts__call-link +7 (351) 283 28 47
-                        a(href="tel:+79080558811").contacts__call-link +7 (908) 055 88 11
-                    .contacts__call-message Оставьте номер и мы Вам перезвоним!
-            .header__icons
-                ul.header__icons__list
-                    each item in ['home', 'message', 'map']
-                        li.header__icons__list-item
-                            a(href="#" class="header__icons__list-link_"+item)
         .innerWrapper
             .menu
                 ul.menu__list
@@ -97,20 +73,6 @@ block content
                         span.slider__list-text Уникальное
                         span.slider__list-text.slider__list-text_mod спецпредложение!
             .content
-                .about
-                    h3 Несколько слов о нас
-                    p Компания «АстрА-техно» – генеральный импортер и дистрибьютор в России строительной, землеройной, коммунально-уборочной техники таких брендов, как:
-                    p MUSTANG (США) — мини погрузчики с бортовым поворотом, шарнирно-сочлененные мини погрузчики, гусеничные мини погрузчики;
-                    ul
-                        li HANIX (Япония) — гусеничные мини экскаваторы;
-                    p А также представляет популярные бренды ландшафтно-озеленительной, грузоподъемной, дорожной, высотной техники и дробильно-сортировочного оборудования
-                    ul
-                        li AVANT (Финляндия) — мини тракторы и мини погрузчики с шарнирно-сочлененной рамой;
-                        li DIECI (Италия) — высокопроизводительные <a href="#">телескопические погрузчики</a> с жёсткой стрелой и с поворотной башней;
-                        li TEREX (Великобритания) — экскаваторы-погрузчики, мини экскаваторы и фронтальные погрузчики;
-                    p Представленные компанией «АстрА-техно» бренды являются лидерами в своей области, а фирмы-изготовители имеют огромный опыт в производстве универсальной техники. Используя современные передовые технологии и разработки, высококвалифицированный персонал заводов-изготовителей производит технику, которая отвечает всем требованиям самых взыскательных клиентов.
-                    p Продажа минитракторов, подъемников и других видов техники - это сфера, в которой особенно важны профессионализм, опыт и понимание главных тенденций данного направления. Наши клиенты, которые хотят купить минитрактор, должны быть уверены в качестве приобретаемой техники и сервисном обслуживании.
-                    p Помимо самих моделей техники наша компания осуществляет продажу дополнительного оборудования, которым при необходимости могут оснащаться машины. Оборудование поставляется от ведущих отечественных и зарубежных изготовителей.
                 .news
                     h3.news-name Последние новости
                     .news__post
@@ -125,60 +87,23 @@ block content
                         time(datetime="19-09-2014") 19 Сентября
                         p Оперативные поставки дробилок и грохотов McCloskey + бесплатная пуско-наладка
                         a(href="#") Подробнее
-                .sponsors
-                    ul.sponsors__list
-                        each item in ['mccloskey','terex','dieci','hanix','avant','mustang','hanix']
-                            li(class="sponsors__list-item sponsors__list-item_"+item)
-                                a(href="#" ).sponsors__list-link
-            .footer
-                .footer__menu
-                    .footer__menu__inner
-                        span.footer__menu__inner-caption О компании
-                        ul.footer__menu__inner__list
-                            each item in ['История создания', 'Персонал', 'Сертификаты', 'Новости']
-                                li.footer__menu__inner__list-item
-                                    a(href="#").footer__menu__inner__list-link=item
-                    .footer__menu__inner
-                        span.footer__menu__inner-caption Сервис
-                        ul.footer__menu__inner__list
-                            each item in ['Обслуживание', 'Партнеры', 'Предложения']
-                                li.footer__menu__inner__list-item
-                                    a(href="#").footer__menu__inner__list-link=item
-                    .footer__menu__inner
-                        span.footer__menu__inner-caption Новости
-                        ul.footer__menu__inner__list
-                            each item in ['Архив', 'Горячие ', 'О компании']
-                                li.footer__menu__inner__list-item
-                                    a(href="#").footer__menu__inner__list-link=item
-                    .footer__menu__inner
-                        span.footer__menu__inner-caption Спецтехника
-                        ul.footer__menu__inner__list
-                            each item in ['Аренда техники', 'Финансовые решения', 'Экскаваторы', 'Погрузчики', 'Автокраны']
-                                li.footer__menu__inner__list-item
-                                    a(href="#").footer__menu__inner__list-link=item
-                    .footer__menu__inner
-                        span.footer__menu__inner-caption Контакты
-                        ul.footer__menu__inner__list
-                            each item in ['Обратная связь', 'Телефон']
-                                li.footer__menu__inner__list-item
-                                    a(href="#").footer__menu__inner__list-link=item
-                    .footer__menu__inner
-                        span.footer__menu__inner-caption Запчасти
-                        ul.footer__menu__inner__list
-                            each item in ['На заказ', 'Смотреть каталог', 'Поиск']
-                                li.footer__menu__inner__list-item
-                                    a(href="#").footer__menu__inner__list-link=item
-                .footer__logo
-                    a(href="#").footer__logo-link
-                        img(src="/img/footer-logo.png")
-                    h1.logo-text Техник
-                .footer__copyright
-                    p.footer__copyright-text Все права защищены 2009-2014
-                    p.footer__copyright-text Любое копирование информации с сайта запрещено.
-                    .contacts
-                        .contacts__call.contacts__call_monochrome
-                            span.contacts__call-message Звоните нам!
-                            .contacts__call-tel
-                                a(href="tel:+73512832847").contacts__call-link +7 (351) 283 28 47
-                                a(href="tel:+79080558811").contacts__call-link +7 (908) 055 88 11
-            
+                .about
+                    h3 Несколько слов о нас
+                    p Компания «АстрА-техно» – генеральный импортер и дистрибьютор в России строительной, землеройной, коммунально-уборочной техники таких брендов, как:
+                    ul
+                        li MUSTANG (США) — мини погрузчики с бортовым поворотом, шарнирно-сочлененные мини погрузчики, гусеничные мини погрузчики;
+                        li HANIX (Япония) — гусеничные мини экскаваторы;
+                    p А также представляет популярные бренды ландшафтно-озеленительной, грузоподъемной, дорожной, высотной техники и дробильно-сортировочного оборудования
+                    ul
+                        li AVANT (Финляндия) — мини тракторы и мини погрузчики с шарнирно-сочлененной рамой;
+                        li DIECI (Италия) — высокопроизводительные <a href="#">телескопические погрузчики</a> с жёсткой стрелой и с поворотной башней;
+                        li TEREX (Великобритания) — экскаваторы-погрузчики, мини экскаваторы и фронтальные погрузчики;
+                    p Представленные компанией «АстрА-техно» бренды являются лидерами в своей области, а фирмы-изготовители имеют огромный опыт в производстве универсальной техники. Используя современные передовые технологии и разработки, высококвалифицированный персонал заводов-изготовителей производит технику, которая отвечает всем требованиям самых взыскательных клиентов.
+                    p Продажа минитракторов, подъемников и других видов техники - это сфера, в которой особенно важны профессионализм, опыт и понимание главных тенденций данного направления. Наши клиенты, которые хотят купить минитрактор, должны быть уверены в качестве приобретаемой техники и сервисном обслуживании.
+                    p Помимо самих моделей техники наша компания осуществляет продажу дополнительного оборудования, которым при необходимости могут оснащаться машины. Оборудование поставляется от ведущих отечественных и зарубежных изготовителей.
+            .sponsors
+                ul.sponsors__list
+                    each item in ['mccloskey','terex','dieci','hanix','avant','mustang','hanix']
+                        li(class="sponsors__list-item sponsors__list-item_"+item)
+                            a(href="#" ).sponsors__list-link
+
